@@ -1,0 +1,20 @@
+<div class='container' style="text-align: center">
+ <p>Balance Roberval</p>
+
+<div *ngFor="let boule of boules" style="display: inline;">
+    <app-boules [boule]="boule" (click)="selectBoule(boule)"></app-boules>
+</div>
+
+<p>
+image here
+</p>
+
+<div>
+  <button  style="margin: 10px" type="button" class="btn btn-primary" (click)='runBalance()'>Exécuter</button>
+  <button  style="margin: 10px" type="button" class="btn btn-danger">Reset</button>
+</div>
+
+<div>
+  <p>Résultat : {{ result }}</p>
+</div>
+</div>
